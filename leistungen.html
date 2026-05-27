@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Leistungen — Malerbetrieb Meisinger Aichach</title>
+<meta name="description" content="Maler & Anstrich, Lackierarbeiten, Gerüstbau, Wärmedämmung, Bodenbeläge, Schimmelsanierung — der komplette Malerprozess aus einer Hand." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav" data-screen-label="Nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Malerbetrieb Meisinger Startseite">Meisinger<span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="unternehmen.html">Unternehmen</a></li>
+      <li><a href="leistungen.html" class="active">Leistungen</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Angebot anfragen</a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero" data-screen-label="01 Intro">
+  <div class="container hero-stagger">
+    <div class="eyebrow"><span>Leistungen · Alles aus einer Hand</span></div>
+    <h1 class="display-1">Neun Disziplinen.<br/><em class="text-rust" style="font-style:italic">Ein Ansprechpartner.</em></h1>
+    <p class="body-large lead">
+      Vom ersten Pinselstrich bis zum letzten Gerüstteil — wir decken den kompletten
+      Malerprozess in einer Hand ab. Ohne Subunternehmer, ohne Schnittstellen, ohne Ausreden.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEISTUNGS-INDEX
+     ============================================================ -->
+<section class="services-index" data-screen-label="02 Index">
+  <div class="container">
+    <div class="services-list reveal">
+      <a href="#anstrich"  class="services-item"><span class="num">01</span><span class="name">Maler &amp; Anstrich</span><span class="arrow">→</span></a>
+      <a href="#lack"      class="services-item"><span class="num">02</span><span class="name">Lackierarbeiten</span><span class="arrow">→</span></a>
+      <a href="#dekor"     class="services-item"><span class="num">03</span><span class="name">Dekorative Wandgestaltung</span><span class="arrow">→</span></a>
+      <a href="#schimmel"  class="services-item"><span class="num">04</span><span class="name">Schimmel &amp; Wasserschäden</span><span class="arrow">→</span></a>
+      <a href="#trocken"   class="services-item"><span class="num">05</span><span class="name">Trockenbau</span><span class="arrow">→</span></a>
+      <a href="#daemmung"  class="services-item"><span class="num">06</span><span class="name">Wärmedämmung</span><span class="arrow">→</span></a>
+      <a href="#boden"     class="services-item"><span class="num">07</span><span class="name">Bodenbeläge</span><span class="arrow">→</span></a>
+      <a href="#beton"     class="services-item"><span class="num">08</span><span class="name">Betonsanierung</span><span class="arrow">→</span></a>
+      <a href="#geruest"   class="services-item"><span class="num">09</span><span class="name">Gerüstbau (eigenes Gerüst)</span><span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-index { padding: var(--space-16) 0; background: var(--color-warm-white); }
+  .services-list { border-top: 1px solid var(--color-sand-light); }
+  .services-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-5) var(--space-2);
+    border-bottom: 1px solid var(--color-sand-light);
+    transition: all var(--duration-normal) var(--ease-out);
+    color: var(--color-charcoal);
+  }
+  .services-item:hover {
+    background: var(--color-cream);
+    padding-left: var(--space-6);
+  }
+  .services-item:hover .arrow { transform: translateX(8px); color: var(--color-accent-rust); }
+  .services-item .num {
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent-rust);
+  }
+  .services-item .name {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    letter-spacing: -0.01em;
+  }
+  .services-item .arrow {
+    color: var(--color-stone);
+    transition: all var(--duration-normal) var(--ease-out);
+    font-size: 1.25rem;
+    text-align: right;
+  }
+</style>
+
+<!-- ============================================================
+     DETAIL-BLOCK 1: FASSADE / ANSTRICH
+     ============================================================ -->
+<section id="anstrich" class="bg-cream" data-screen-label="03 Anstrich">
+  <div class="container">
+    <div class="detail-block">
+      <div class="detail-meta reveal">
+        <span class="caption text-rust">01 — Maler &amp; Anstrich</span>
+        <span class="caption" style="margin-top: var(--space-3)">Innen · Außen</span>
+      </div>
+      <div class="detail-content reveal">
+        <h2 class="display-2 mb-0">Die Fassade ist die <em class="text-rust" style="font-style:italic">Visitenkarte</em> Ihres Hauses.</h2>
+        <p class="body-large" style="margin-top: var(--space-6)">
+          Mit der richtigen Farbgestaltung des Außenanstrichs kann sich Ihr Gebäude harmonisch
+          in die Nachbarschaft einfügen und ein Zuhause auch von außen einzigartig präsentieren.
+          Innen sorgen wir für Räume, in denen man gerne lebt.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:var(--space-2); margin-top: var(--space-6)">
+          <span class="tag tag-rust">Innenanstrich</span>
+          <span class="tag tag-rust">Fassade</span>
+          <span class="tag tag-sage">Umweltfreundlich</span>
+          <span class="tag tag-stone">Renovierung</span>
+        </div>
+      </div>
+      <div class="detail-visual reveal">
+        <div class="detail-photo" style="aspect-ratio: 1/1.2">
+          <img src="assets/leistung-anstrich.jpg" alt="Fassade Vorher-Nachher Vergleich — saniertes Wohnhaus in Aichach" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DETAIL-BLOCK 2: DEKORATIVE WANDGESTALTUNG
+     ============================================================ -->
+<section id="dekor" data-screen-label="04 Dekor">
+  <div class="container">
+    <div class="detail-block reverse-layout">
+      <div class="detail-visual reveal">
+        <div class="detail-photo" style="aspect-ratio: 1/1.2">
+          <img src="assets/leistung-dekor.jpg" alt="Dekorative Wandgestaltung in einem hochwertigen Café-Innenraum" />
+        </div>
+      </div>
+      <div class="detail-meta reveal">
+        <span class="caption text-rust">03 — Dekor</span>
+        <span class="caption" style="margin-top: var(--space-3)">Wandgestaltung</span>
+      </div>
+      <div class="detail-content reveal">
+        <h2 class="display-2 mb-0">Vom Kinderzimmer bis zum <em class="text-rust" style="font-style:italic">Salon.</em></h2>
+        <p class="body-large" style="margin-top: var(--space-6)">
+          Heutzutage gibt es fast keine Grenzen für Ihre Gestaltungswünsche. Aus langweiligen
+          Kinderzimmern zaubern wir ein Actionparadies für Kinder oder verwandeln Ihren
+          Essbereich in einen eleganten Salon.
+        </p>
+        <ul class="check-list" style="margin-top: var(--space-6)">
+          <li><span class="check-mark">✓</span>Spachteltechniken &amp; Stuccolustro</li>
+          <li><span class="check-mark">✓</span>Wandtattoos &amp; Motivmalerei</li>
+          <li><span class="check-mark">✓</span>Tapezierarbeiten in allen Qualitäten</li>
+          <li><span class="check-mark">✓</span>Beratung mit Mustern vor Ort</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DETAIL-BLOCK 3: SCHIMMEL
+     ============================================================ -->
+<section id="schimmel" class="bg-charcoal" data-screen-label="05 Schimmel">
+  <div class="container">
+    <div class="detail-block dark">
+      <div class="detail-meta reveal">
+        <span class="caption" style="color: var(--color-accent-gold)">04 — Sanierung</span>
+        <span class="caption" style="margin-top: var(--space-3); color: var(--color-sand)">Schimmel · Wasserschäden</span>
+      </div>
+      <div class="detail-content reveal">
+        <h2 class="display-2" style="color: var(--color-warm-white)">
+          Wo Feuchtigkeit eindringt, kann auch <em class="text-gold" style="font-style:italic">Schimmel</em> gedeihen.
+        </h2>
+        <p class="body-large" style="margin-top: var(--space-6); color: var(--color-sand); max-width: 56ch">
+          Die Ursachen können vielfältig sein — Wasserschaden, undichte Fassaden oder mangelnde
+          Belüftung. Wir finden den Auslöser, beseitigen den Befall dauerhaft und bringen Ihre
+          Räume zurück in einen gesunden Zustand.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:var(--space-2); margin-top: var(--space-6)">
+          <span class="tag" style="background:rgba(212,160,23,0.15);color:var(--color-accent-gold);border:1px solid rgba(212,160,23,0.3)">Ursachenanalyse</span>
+          <span class="tag" style="background:rgba(212,160,23,0.15);color:var(--color-accent-gold);border:1px solid rgba(212,160,23,0.3)">Dauerhafte Sanierung</span>
+          <span class="tag" style="background:rgba(212,160,23,0.15);color:var(--color-accent-gold);border:1px solid rgba(212,160,23,0.3)">Wasserschaden</span>
+        </div>
+      </div>
+      <div class="detail-visual reveal">
+        <div class="detail-photo" style="aspect-ratio: 1/1.2">
+          <img src="assets/leistung-sanierung.jpg" alt="Sanierung einer feuchten Wand — freigelegtes Mauerwerk mit Spachtel" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DETAIL-BLOCK 4: GERÜSTBAU
+     ============================================================ -->
+<section id="geruest" class="bg-cream" data-screen-label="06 Gerüstbau">
+  <div class="container">
+    <div class="detail-block reverse-layout">
+      <div class="detail-visual reveal">
+        <div class="detail-photo" style="aspect-ratio: 1/1.2">
+          <img src="assets/leistung-geruestbau.jpg" alt="Eigenes Gerüst des Malerbetriebs Meisinger an einer Fassade" />
+        </div>
+      </div>
+      <div class="detail-meta reveal">
+        <span class="caption text-rust">09 — Gerüstbau</span>
+        <span class="caption" style="margin-top: var(--space-3)">Bis 2.000 m²</span>
+      </div>
+      <div class="detail-content reveal">
+        <h2 class="display-2 mb-0"><em class="text-rust" style="font-style:italic">2.000 m²</em> eigenes Gerüst — wir bauen alles selbst.</h2>
+        <p class="body-large" style="margin-top: var(--space-6)">
+          Kein Warten auf Fremdfirmen, keine doppelte Logistik. Wir besitzen ein eigenes
+          Gerüst bis zu 2.000 m² und montieren es selbst. Das spart Zeit, Geld und Nerven —
+          und kommt auch bei Auftragsspitzen schnell zu Ihnen.
+        </p>
+        <div class="geruest-stats">
+          <div class="geruest-stat">
+            <span class="value">2.000<small>m²</small></span>
+            <span class="caption">Maximalfläche</span>
+          </div>
+          <div class="geruest-stat">
+            <span class="value">24<small>h</small></span>
+            <span class="caption">Reaktionszeit</span>
+          </div>
+          <div class="geruest-stat">
+            <span class="value">100<small>%</small></span>
+            <span class="caption">In Eigenregie</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .detail-photo {
+    overflow: hidden;
+    background: var(--color-cream);
+  }
+  .detail-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .detail-block {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: var(--space-12);
+    align-items: start;
+  }
+  .detail-block.reverse-layout {
+    grid-template-columns: 1fr 200px 1fr;
+  }
+  .detail-block.reverse-layout .detail-visual { grid-column: 1; grid-row: 1; }
+  .detail-block.reverse-layout .detail-meta { grid-column: 2; grid-row: 1; }
+  .detail-block.reverse-layout .detail-content { grid-column: 3; grid-row: 1; }
+  .detail-meta {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--space-2);
+    border-top: 2px solid var(--color-accent-rust);
+  }
+  .detail-block.dark .detail-meta { border-top-color: var(--color-accent-gold); }
+  .detail-content { max-width: 50ch; }
+  @media (max-width: 980px) {
+    .detail-block, .detail-block.reverse-layout {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+    .detail-block.reverse-layout .detail-visual,
+    .detail-block.reverse-layout .detail-meta,
+    .detail-block.reverse-layout .detail-content {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }
+  .geruest-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-sand-light);
+  }
+  .geruest-stat .value {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    color: var(--color-accent-rust);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .geruest-stat .value small {
+    font-size: 1rem;
+    margin-left: 2px;
+    color: var(--color-stone);
+    font-weight: 400;
+  }
+  .geruest-stat .caption { margin-top: var(--space-2); display: block; }
+</style>
+
+<!-- ============================================================
+     KOMPAKTE LEISTUNGS-CARDS (Rest)
+     ============================================================ -->
+<section data-screen-label="07 Weitere">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <div class="eyebrow"><span>Übersicht — Weitere Leistungen</span></div>
+        <h2 class="display-2">Und<br/>noch mehr.</h2>
+      </div>
+      <p class="body-large section-intro">
+        Was nicht in den großen Detailblöcken steht — hier ist die vollständige Übersicht.
+        Fehlt etwas? Fragen Sie uns einfach.
+      </p>
+    </div>
+
+    <div class="grid grid-3" style="margin-top: var(--space-12)">
+      <article id="lack" class="service-card reveal">
+        <div class="icon">✦</div>
+        <h3>Lackierarbeiten</h3>
+        <p>Fenster, Türen, Geländer, Möbel — präzise Lackierung in allen Glanzgraden, innen und außen.</p>
+      </article>
+      <article id="trocken" class="service-card reveal">
+        <div class="icon">⬚</div>
+        <h3>Trockenbau</h3>
+        <p>Wände, Decken, Vorbauten — komplette Trockenbaulösungen inkl. Spachtelung und Anstrich.</p>
+      </article>
+      <article id="daemmung" class="service-card reveal">
+        <div class="icon">▦</div>
+        <h3>Wärmedämmung</h3>
+        <p>Perfekt abgestimmte Dämmsysteme — WDVS, Innendämmung, Sockeldämmung. Nachhaltig planen.</p>
+      </article>
+      <article id="boden" class="service-card reveal">
+        <div class="icon">▤</div>
+        <h3>Bodenbeläge</h3>
+        <p>Holz, Vinyl, Teppich, Designboden — kompetente Auswahl und professionelle Verlegung.</p>
+      </article>
+      <article id="beton" class="service-card reveal">
+        <div class="icon">◫</div>
+        <h3>Betonsanierung</h3>
+        <p>Balkone, Garagen, Stützen — Rissinjektion, Ausbesserung und Schutzbeschichtung.</p>
+      </article>
+      <article class="service-card reveal" style="background: var(--color-charcoal); border-left-color: var(--color-accent-gold);">
+        <div class="icon" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--color-accent-gold)">+</div>
+        <h3 style="color: var(--color-warm-white)">Etwas anderes?</h3>
+        <p style="color: var(--color-sand)">Sie haben ein Projekt, das hier nicht aufgelistet ist? Sprechen Sie uns an — wir finden eine Lösung.</p>
+        <a href="kontakt.html" class="btn btn-ghost" style="color: var(--color-accent-gold); border-bottom-color: var(--color-accent-gold); margin-top:auto; padding-top: var(--space-4)">Anfragen <span class="arrow">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="bg-cream" data-screen-label="08 CTA">
+  <div class="container" style="text-align: center">
+    <div class="reveal" style="max-width: 60ch; margin: 0 auto">
+      <div class="eyebrow" style="justify-content:center"><span>Klingt nach Ihrem Projekt?</span></div>
+      <h2 class="display-2">Ein Anruf reicht.<br/>Wir kommen vorbei.</h2>
+      <p class="body-large" style="margin-top: var(--space-6)">
+        Beratung vor Ort, Aufmaß, klares Angebot — alles kostenlos und unverbindlich.
+      </p>
+      <div style="display: flex; gap: var(--space-5); justify-content: center; flex-wrap: wrap; margin-top: var(--space-8)">
+        <a href="kontakt.html" class="btn btn-primary">Angebot anfragen <span class="arrow">→</span></a>
+        <a href="tel:+491721562128" class="btn btn-secondary">+49 172 1562128</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" data-screen-label="Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size: 1.75rem">Meisinger<span class="dot" aria-hidden="true"></span></a>
+        <p>Malermeisterbetrieb · Aichach · Bayern. Inhabergeführt, regional, mit Leidenschaft für das Handwerk.</p>
+        <div style="display:flex; gap: var(--space-2); margin-top: var(--space-6)">
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Meisterbetrieb</span>
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Familienunternehmen</span>
+        </div>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="leistungen.html#anstrich">Maler &amp; Anstrich</a></li>
+          <li><a href="leistungen.html#geruest">Gerüstbau</a></li>
+          <li><a href="leistungen.html#dekor">Wandgestaltung</a></li>
+          <li><a href="leistungen.html#daemmung">Wärmedämmung</a></li>
+          <li><a href="leistungen.html#schimmel">Schimmelsanierung</a></li>
+          <li><a href="leistungen.html#boden">Bodenbeläge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Johannesstraße 19</li>
+          <li>86551 Aichach</li>
+          <li style="padding-top: var(--space-3)"><a href="tel:+491721562128">+49 172 1562128</a></li>
+          <li><a href="mailto:info@maler-meisinger.de">info@maler-meisinger.de</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2025</span> Malerbetrieb Joachim Meisinger</span>
+      <span style="display:flex; gap: var(--space-6)">
+        <a href="kontakt.html#impressum">Impressum</a>
+        <a href="kontakt.html#datenschutz">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

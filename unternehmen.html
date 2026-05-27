@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Das Unternehmen — Malerbetrieb Meisinger Aichach</title>
+<meta name="description" content="Familiengeführter Malermeisterbetrieb in Aichach. Drei Generationen Vertrauen, jahrelange Erfahrung und höchste Qualität — lernen Sie uns kennen." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav" data-screen-label="Nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Malerbetrieb Meisinger Startseite">Meisinger<span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="unternehmen.html" class="active">Unternehmen</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Angebot anfragen</a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero" data-screen-label="01 Intro">
+  <div class="container hero-stagger">
+    <div class="eyebrow"><span>Das Unternehmen · Aichach</span></div>
+    <h1 class="display-1" style="max-width: 16ch">Drei Generationen <em class="text-rust" style="font-style:italic">Vertrauen.</em></h1>
+    <p class="body-large lead">
+      Die Firma existiert schon seit vielen Jahren und ist bekannt für ihre qualitativ
+      hochwertige Arbeit und Zuverlässigkeit. Mit jahrelanger Arbeitserfahrung garantieren
+      wir, dass sämtliche Arbeiten stets optimal und gewissenhaft ausgeführt werden.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     INHABER-PORTRAIT
+     ============================================================ -->
+<section data-screen-label="02 Inhaber">
+  <div class="container">
+    <div class="portrait-grid">
+      <div class="portrait-image reveal">
+        <div class="portrait-photo">
+          <img src="assets/joachim-meisinger.jpg" alt="Joachim Meisinger, Malermeister und Inhaber des Malerbetriebs Meisinger in Aichach" />
+        </div>
+        <div class="portrait-caption">
+          <div>
+            <span class="caption text-stone">Inhaber &amp; Malermeister</span>
+            <strong>Joachim Meisinger</strong>
+          </div>
+          <span class="tag tag-gold">Meisterbrief</span>
+        </div>
+      </div>
+
+      <div class="portrait-text reveal">
+        <div class="eyebrow"><span>02 — Unser Motto</span></div>
+        <p class="motto-quote">
+          „Als modernes Dienstleistungsunternehmen steht <em>guter Service</em> für uns ganz oben.
+          Wir betreuen Sie von Anfang an und lassen Sie nicht im Regen stehen. Wir sind erst
+          zufrieden, wenn <em>Sie</em> es sind."
+        </p>
+        <div class="motto-attribution">
+          <span class="caption">— Joachim Meisinger, Malermeister</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .portrait-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-16);
+    align-items: center;
+  }
+  .portrait-photo {
+    aspect-ratio: 4/5;
+    min-height: 480px;
+    overflow: hidden;
+    background: var(--color-cream);
+  }
+  .portrait-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .portrait-caption {
+    margin-top: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) 0;
+    border-top: 1px solid var(--color-sand-light);
+  }
+  .portrait-caption strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-charcoal);
+    margin-top: 2px;
+  }
+  .motto-quote {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.35;
+    color: var(--color-charcoal);
+    margin: 0;
+    position: relative;
+    padding-left: var(--space-6);
+    border-left: 4px solid var(--color-accent-rust);
+  }
+  .motto-quote em { color: var(--color-accent-rust); font-style: italic; font-weight: 700; }
+  .motto-attribution { margin-top: var(--space-6); padding-left: var(--space-6); }
+  @media (max-width: 860px) {
+    .portrait-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- ============================================================
+     WERTE-GRID
+     ============================================================ -->
+<section class="bg-cream" data-screen-label="03 Werte">
+  <div class="container">
+    <header class="section-header reveal" style="grid-template-columns: 1fr 1fr">
+      <div>
+        <div class="eyebrow"><span>03 — Was uns ausmacht</span></div>
+        <h2 class="display-2">Drei Werte.<br/>Keine <em class="text-rust" style="font-style:italic">Kompromisse.</em></h2>
+      </div>
+      <p class="body-large" style="max-width: 44ch">
+        Unsere Kunden kommen seit Jahrzehnten zu uns zurück — weil wir liefern, was wir versprechen,
+        und wie wir es versprechen.
+      </p>
+    </header>
+
+    <div class="values-grid">
+      <article class="value-card reveal">
+        <span class="value-number">01</span>
+        <h3 class="value-title">Zuverlässigkeit</h3>
+        <p class="value-text">
+          Termine sind Termine. Was wir zusagen, halten wir — vom ersten Beratungsgespräch
+          bis zur Abnahme der fertigen Arbeit.
+        </p>
+        <div class="value-stripe" aria-hidden="true"></div>
+      </article>
+
+      <article class="value-card reveal">
+        <span class="value-number">02</span>
+        <h3 class="value-title">Qualität</h3>
+        <p class="value-text">
+          Originalprodukte, saubere Ausführung, langlebige Ergebnisse. Wir arbeiten so,
+          wie wir es auch in unserem eigenen Haus erwarten würden.
+        </p>
+        <div class="value-stripe" aria-hidden="true"></div>
+      </article>
+
+      <article class="value-card reveal">
+        <span class="value-number">03</span>
+        <h3 class="value-title">Persönlichkeit</h3>
+        <p class="value-text">
+          Sie sprechen immer mit dem Meister selbst. Keine Hotline, keine Subunternehmer —
+          ein fester Ansprechpartner vom Angebot bis zur Abnahme.
+        </p>
+        <div class="value-stripe" aria-hidden="true"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-12);
+  }
+  .value-card {
+    background: var(--color-warm-white);
+    padding: var(--space-10) var(--space-8);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    overflow: hidden;
+    transition: transform var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal) var(--ease-out);
+  }
+  .value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .value-number {
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent-rust);
+  }
+  .value-title {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-charcoal);
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+  .value-text { color: var(--color-stone); margin: 0; font-size: 0.95rem; line-height: 1.7; }
+  .value-stripe {
+    margin-top: var(--space-6);
+    height: 3px;
+    width: 64px;
+    background: var(--color-accent-rust);
+  }
+  .value-card:nth-child(2) .value-stripe { background: var(--color-accent-gold); }
+  .value-card:nth-child(3) .value-stripe { background: var(--color-accent-sage); }
+  @media (max-width: 860px) {
+    .values-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- ============================================================
+     GENERATIONEN HIGHLIGHT
+     ============================================================ -->
+<section class="bg-charcoal generations" data-screen-label="04 Generationen">
+  <div class="gradient-rule" style="position:absolute;top:0;left:0;right:0"></div>
+  <div class="container">
+    <div class="reveal generations-inner">
+      <span class="caption" style="color: var(--color-accent-gold)">04 — Aus einem Google Review</span>
+      <p class="generations-quote">
+        „Wir sind mittlerweile die <em>3. Generation,</em> die von ihm malern lässt.
+        Alles top!"
+      </p>
+      <div class="generations-attribution">
+        <div>
+          <strong style="font-family:'DM Sans',sans-serif;color:var(--color-cream);font-weight:600">— Eine langjährige Kundin</strong>
+          <span class="caption" style="display:block;margin-top:4px">Google Review · ★★★★★</span>
+        </div>
+        <div class="generations-stamp">
+          <div class="generations-stamp-inner">
+            <span class="caption" style="color: var(--color-accent-gold)">Seit</span>
+            <strong>20+</strong>
+            <span class="caption" style="color: var(--color-accent-gold)">Jahre</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .generations { position: relative; padding: var(--space-24) 0; }
+  .generations-inner {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+  }
+  .generations-quote {
+    grid-column: 1 / -1;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.2;
+    color: var(--color-warm-white);
+    margin: var(--space-6) 0 var(--space-8);
+    letter-spacing: -0.01em;
+  }
+  .generations-quote em { color: var(--color-accent-gold); font-style: italic; font-weight: 900; }
+  .generations-attribution {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-8);
+    border-top: 1px solid rgba(255,255,255,0.12);
+  }
+  .generations-stamp {
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--color-accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .generations-stamp-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .generations-stamp-inner strong {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2.25rem;
+    color: var(--color-warm-white);
+    line-height: 1;
+  }
+  @media (max-width: 600px) {
+    .generations-attribution { flex-direction: column; align-items: flex-start; gap: var(--space-6); }
+  }
+</style>
+
+<!-- ============================================================
+     TIMELINE / FAKTEN
+     ============================================================ -->
+<section data-screen-label="05 Fakten">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <div class="eyebrow"><span>05 — Auf einen Blick</span></div>
+        <h2 class="display-2">Zahlen,<br/>die für sich sprechen.</h2>
+      </div>
+      <p class="body-large section-intro">
+        Was bei uns Tradition ist, ist bei anderen Versprechen. Hier ist der Beweis —
+        in Jahren, Quadratmetern und Sternen.
+      </p>
+    </div>
+
+    <div class="grid grid-4 reveal" style="margin-top: var(--space-12)">
+      <div class="stat-card">
+        <span class="stat-value">20<span style="font-size:2rem;vertical-align:top">+</span></span>
+        <span class="stat-label">Jahre Erfahrung</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">2.000<span style="font-size:1.5rem;display:block;margin-top:4px">m²</span></span>
+        <span class="stat-label">Eigenes Gerüst</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">5,0<span style="font-size:2rem;vertical-align:top">★</span></span>
+        <span class="stat-label">Google Rating</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">3.</span>
+        <span class="stat-label">Generation Kunden</span>
+      </div>
+    </div>
+
+    <div class="divider-label">
+      <span class="caption">Bereit, uns kennenzulernen?</span>
+    </div>
+
+    <div class="reveal" style="text-align: center">
+      <a href="kontakt.html" class="btn btn-primary">Kostenlos Termin vereinbaren <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" data-screen-label="Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size: 1.75rem">Meisinger<span class="dot" aria-hidden="true"></span></a>
+        <p>Malermeisterbetrieb · Aichach · Bayern. Inhabergeführt, regional, mit Leidenschaft für das Handwerk.</p>
+        <div style="display:flex; gap: var(--space-2); margin-top: var(--space-6)">
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Meisterbetrieb</span>
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Familienunternehmen</span>
+        </div>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="leistungen.html#anstrich">Maler &amp; Anstrich</a></li>
+          <li><a href="leistungen.html#geruest">Gerüstbau</a></li>
+          <li><a href="leistungen.html#dekor">Wandgestaltung</a></li>
+          <li><a href="leistungen.html#daemmung">Wärmedämmung</a></li>
+          <li><a href="leistungen.html#schimmel">Schimmelsanierung</a></li>
+          <li><a href="leistungen.html#boden">Bodenbeläge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Johannesstraße 19</li>
+          <li>86551 Aichach</li>
+          <li style="padding-top: var(--space-3)"><a href="tel:+491721562128">+49 172 1562128</a></li>
+          <li><a href="mailto:info@maler-meisinger.de">info@maler-meisinger.de</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2025</span> Malerbetrieb Joachim Meisinger</span>
+      <span style="display:flex; gap: var(--space-6)">
+        <a href="kontakt.html#impressum">Impressum</a>
+        <a href="kontakt.html#datenschutz">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

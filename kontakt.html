@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kontakt — Malerbetrieb Meisinger Aichach</title>
+<meta name="description" content="Schreiben Sie uns oder rufen Sie an. Kostenlose Beratung vor Ort in Aichach und Umgebung. Johannesstraße 19, 86551 Aichach." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav" data-screen-label="Nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Malerbetrieb Meisinger Startseite">Meisinger<span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="unternehmen.html">Unternehmen</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Angebot anfragen</a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero" data-screen-label="01 Intro">
+  <div class="container hero-stagger">
+    <div class="eyebrow"><span>Kontakt · Aichach</span></div>
+    <h1 class="display-1">Rufen Sie an —<br/>wir <em class="text-rust" style="font-style:italic">kommen vorbei.</em></h1>
+    <p class="body-large lead">
+      Beratung vor Ort, klares Angebot, ehrliche Ausführung. Am schnellsten geht's per Telefon —
+      ein kurzer Anruf reicht, um einen unverbindlichen Termin zu vereinbaren.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRIMÄRE KONTAKTWEGE — TELEFON & MAIL
+     ============================================================ -->
+<section data-screen-label="02 Kontakt">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom: var(--space-12)">
+      <div>
+        <div class="eyebrow"><span>02 — So erreichen Sie uns</span></div>
+        <h2 class="display-2">Zwei Wege.<br/>Beide direkt zum <em class="text-rust" style="font-style:italic">Meister.</em></h2>
+      </div>
+      <p class="body-large section-intro">
+        Sie sprechen immer direkt mit Joachim Meisinger — keine Hotline, kein Callcenter,
+        keine Warteschleife. Versprochen.
+      </p>
+    </div>
+
+    <div class="contact-primary reveal">
+      <a href="tel:+491721562128" class="contact-tile contact-tile-phone">
+        <span class="caption tile-eyebrow">Telefon · am schnellsten</span>
+        <strong class="tile-value">+49 172 1562128</strong>
+        <span class="tile-hint">Anrufen <span class="arrow">→</span></span>
+      </a>
+      <a href="mailto:info@maler-meisinger.de" class="contact-tile contact-tile-mail">
+        <span class="caption tile-eyebrow">E-Mail</span>
+        <strong class="tile-value">info@maler-meisinger.de</strong>
+        <span class="tile-hint">E-Mail schreiben <span class="arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ANSCHRIFT & ÖFFNUNGSZEITEN
+     ============================================================ -->
+<section class="bg-cream" data-screen-label="03 Anschrift">
+  <div class="container">
+    <div class="address-grid">
+      <div class="reveal address-block">
+        <div class="eyebrow"><span>03 — Anschrift</span></div>
+        <h2 class="display-2 mb-0" style="margin-bottom: var(--space-6)">Werkstatt &amp;<br/>Büro.</h2>
+        <address>
+          <strong>Malermeister Joachim Meisinger</strong>
+          Johannesstraße 19<br/>
+          86551 Aichach<br/>
+          Bayern, Deutschland
+        </address>
+        <a href="https://www.openstreetmap.org/?mlat=48.458&amp;mlon=11.135#map=16/48.458/11.135" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: var(--space-8)">Route planen <span class="arrow">→</span></a>
+      </div>
+
+      <div class="reveal hours-block">
+        <div class="eyebrow"><span>04 — Erreichbarkeit</span></div>
+        <h2 class="display-2 mb-0" style="margin-bottom: var(--space-6)">Öffnungs-<br/>zeiten.</h2>
+        <ul class="hours-list">
+          <li><span>Montag — Freitag</span><strong>07:00 — 17:00</strong></li>
+          <li><span>Samstag</span><strong>Nach Vereinbarung</strong></li>
+          <li><span>Sonntag</span><strong>Geschlossen</strong></li>
+        </ul>
+        <p class="caption hours-note">
+          Außerhalb der Zeiten gerne eine kurze Nachricht auf der Mailbox — wir rufen zurück.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+  @media (max-width: 860px) {
+    .contact-primary { grid-template-columns: 1fr; }
+  }
+  .contact-tile {
+    background: var(--color-charcoal);
+    color: var(--color-cream);
+    padding: var(--space-12) var(--space-10);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    position: relative;
+    transition: all var(--duration-normal) var(--ease-out);
+    overflow: hidden;
+  }
+  .contact-tile::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--color-accent-rust);
+    transition: height var(--duration-normal) var(--ease-out);
+  }
+  .contact-tile-mail::before { background: var(--color-accent-gold); }
+  .contact-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  .contact-tile:hover::before { height: 8px; }
+  .tile-eyebrow { color: var(--color-accent-gold); }
+  .contact-tile-mail .tile-eyebrow { color: var(--color-accent-rust); }
+  .tile-value {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: var(--color-warm-white);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    word-break: break-word;
+  }
+  .tile-hint {
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-sand);
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .contact-tile:hover .arrow { transform: translateX(6px); }
+
+  .address-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+  }
+  @media (max-width: 860px) {
+    .address-grid { grid-template-columns: 1fr; gap: var(--space-10); }
+  }
+  .address-block address {
+    font-style: normal;
+    color: var(--color-ink);
+    line-height: 1.8;
+    font-size: 1.125rem;
+    padding-top: var(--space-4);
+    border-top: 2px solid var(--color-accent-rust);
+  }
+  .address-block address strong {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3);
+  }
+  .hours-block .hours-list {
+    padding-top: var(--space-4);
+    border-top: 2px solid var(--color-accent-gold);
+  }
+  .hours-list { display: flex; flex-direction: column; gap: var(--space-3); }
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--space-3) 0;
+    border-bottom: 1px dashed var(--color-sand-light);
+    font-size: 1.05rem;
+  }
+  .hours-list li:last-child { border-bottom: none; }
+  .hours-list span {
+    font-family: "DM Sans", sans-serif;
+    color: var(--color-stone);
+  }
+  .hours-list strong {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: var(--color-charcoal);
+  }
+  .hours-note { margin-top: var(--space-6); max-width: 38ch; }
+</style>
+
+<!-- ============================================================
+     MAP
+     ============================================================ -->
+<section data-screen-label="05 Standort">
+  <div class="container">
+    <header class="section-header reveal" style="grid-template-columns: 1fr 1fr; margin-bottom: var(--space-10)">
+      <div>
+        <div class="eyebrow"><span>05 — Wo Sie uns finden</span></div>
+        <h2 class="display-2">Mitten in <em class="text-rust" style="font-style:italic">Aichach.</em></h2>
+      </div>
+      <p class="body-large" style="max-width: 44ch">
+        Wir arbeiten im Großraum Aichach, Augsburg und Friedberg — und kommen auf Anfrage gerne
+        auch in weitere Regionen Bayerns.
+      </p>
+    </header>
+
+    <div class="map-wrap reveal">
+      <iframe
+        title="Standort Malerbetrieb Meisinger, Aichach"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=11.115%2C48.448%2C11.155%2C48.468&amp;layer=mapnik&amp;marker=48.458%2C11.135"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="border:0; width:100%; height:480px; display:block; filter: grayscale(0.4) contrast(1.05);"
+      ></iframe>
+      <div class="map-overlay">
+        <span class="caption">Adresse</span>
+        <strong>Johannesstraße 19<br/>86551 Aichach</strong>
+        <a href="https://www.openstreetmap.org/?mlat=48.458&amp;mlon=11.135#map=16/48.458/11.135" target="_blank" rel="noopener" class="btn btn-dark" style="margin-top: var(--space-4)">Route planen <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .map-wrap { position: relative; }
+  .map-overlay {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    background: var(--color-warm-white);
+    padding: var(--space-6) var(--space-8);
+    max-width: 320px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .map-overlay strong {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-charcoal);
+    line-height: 1.3;
+  }
+  @media (max-width: 600px) {
+    .map-overlay {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      max-width: none;
+      margin-top: var(--space-4);
+    }
+  }
+</style>
+
+<!-- ============================================================
+     IMPRESSUM (Kurzform)
+     ============================================================ -->
+<section id="impressum" class="bg-cream" data-screen-label="06 Impressum">
+  <div class="container">
+    <div class="legal-grid">
+      <div class="reveal">
+        <div class="eyebrow"><span>06 — Impressum</span></div>
+        <h2 class="h1" style="margin-bottom: var(--space-4)">Impressum</h2>
+        <p class="caption" style="margin-bottom: var(--space-4)">Angaben gemäß § 5 TMG</p>
+        <p style="color: var(--color-ink); line-height: 1.7; margin: 0">
+          <strong style="color: var(--color-charcoal)">Malermeister Joachim Meisinger</strong><br/>
+          Johannesstraße 19<br/>
+          86551 Aichach<br/><br/>
+          Telefon: +49 172 1562128<br/>
+          E-Mail: info@maler-meisinger.de
+        </p>
+      </div>
+
+      <div id="datenschutz" class="reveal">
+        <div class="eyebrow"><span>07 — Datenschutz</span></div>
+        <h2 class="h1" style="margin-bottom: var(--space-4)">Datenschutz</h2>
+        <p style="color: var(--color-ink); line-height: 1.7; margin: 0; max-width: 50ch">
+          Wir behandeln Ihre persönlichen Daten vertraulich und entsprechend der gesetzlichen
+          Datenschutzvorschriften (DSGVO). Es werden auf dieser Website keine personenbezogenen
+          Daten erhoben oder gespeichert. Server-Logs werden ausschließlich zur Sicherstellung
+          des Betriebs verwendet.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .legal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+  }
+  @media (max-width: 768px) {
+    .legal-grid { grid-template-columns: 1fr; gap: var(--space-10); }
+  }
+</style>
+
+</main>
+
+<footer class="footer" data-screen-label="Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size: 1.75rem">Meisinger<span class="dot" aria-hidden="true"></span></a>
+        <p>Malermeisterbetrieb · Aichach · Bayern. Inhabergeführt, regional, mit Leidenschaft für das Handwerk.</p>
+        <div style="display:flex; gap: var(--space-2); margin-top: var(--space-6)">
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Meisterbetrieb</span>
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Familienunternehmen</span>
+        </div>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="leistungen.html#anstrich">Maler &amp; Anstrich</a></li>
+          <li><a href="leistungen.html#geruest">Gerüstbau</a></li>
+          <li><a href="leistungen.html#dekor">Wandgestaltung</a></li>
+          <li><a href="leistungen.html#daemmung">Wärmedämmung</a></li>
+          <li><a href="leistungen.html#schimmel">Schimmelsanierung</a></li>
+          <li><a href="leistungen.html#boden">Bodenbeläge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Johannesstraße 19</li>
+          <li>86551 Aichach</li>
+          <li style="padding-top: var(--space-3)"><a href="tel:+491721562128">+49 172 1562128</a></li>
+          <li><a href="mailto:info@maler-meisinger.de">info@maler-meisinger.de</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2025</span> Malerbetrieb Joachim Meisinger</span>
+      <span style="display:flex; gap: var(--space-6)">
+        <a href="kontakt.html#impressum">Impressum</a>
+        <a href="kontakt.html#datenschutz">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

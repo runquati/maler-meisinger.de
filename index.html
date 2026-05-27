@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Malerbetrieb Meisinger — Ihr Malermeister in Aichach</title>
+<meta name="description" content="Maler & Anstrich, Gerüstbau, Wärmedämmung und mehr. Meisterbetrieb mit 5,0 Google-Bewertung. Kostenlose Beratung vor Ort in Aichach und Umgebung." />
+<meta name="keywords" content="Maler Aichach, Malermeister Aichach, Gerüstbau Aichach, Fassade streichen, Malerbetrieb Meisinger" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" data-screen-label="Nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Malerbetrieb Meisinger Startseite">Meisinger<span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Start</a></li>
+      <li><a href="unternehmen.html">Unternehmen</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav-cta">Angebot anfragen</a>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" data-screen-label="01 Hero">
+  <div class="container">
+    <div class="hero-layout hero-stagger">
+      <div class="eyebrow"><span>Malermeister · Aichach · Seit 20+ Jahren</span></div>
+      <h1 class="display-1">
+        Wir machen alles ein bisschen <em class="text-rust" style="font-style:italic">bunter</em>.
+      </h1>
+      <p class="italic-accent">Malen, Lackieren, Böden, Gerüstbau.</p>
+      <p class="body-large hero-lead">
+        Lust auf Veränderung? Wir kommen zu Ihnen — kostenlos, unverbindlich, mit Ideen und
+        Farbinspirationen für Ihre Räume und Fassaden.
+      </p>
+      <div class="hero-ctas">
+        <a href="kontakt.html" class="btn btn-primary">Angebot anfragen <span class="arrow">→</span></a>
+        <a href="leistungen.html" class="btn btn-ghost">Leistungen ansehen <span class="arrow">→</span></a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">20<span class="text-rust">+</span></span>
+          <span class="hero-stat-label">Jahre Erfahrung</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">2.000<span class="text-rust"> m²</span></span>
+          <span class="hero-stat-label">Eigenes Gerüst</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">5,0<span class="text-rust"> ★</span></span>
+          <span class="hero-stat-label">Google · 13 Bewertungen</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side: editorial visual block -->
+    <aside class="hero-visual">
+      <div class="hero-tag tag tag-rust">Seit 20+ Jahren · Meisterbetrieb</div>
+      <div class="hero-image">
+        <img src="assets/hero-fassade.jpg" alt="Malermeister Meisinger bei der Fassadenarbeit in Aichach" />
+      </div>
+      <div class="hero-color-strip" aria-hidden="true">
+        <span style="background:var(--color-accent-rust)"></span>
+        <span style="background:var(--color-accent-gold)"></span>
+        <span style="background:var(--color-accent-sage)"></span>
+        <span style="background:var(--color-charcoal)"></span>
+        <span style="background:var(--color-cream)"></span>
+      </div>
+      <div class="hero-caption caption">Fassade · Aichach · Detail</div>
+    </aside>
+  </div>
+</section>
+
+<style>
+  .hero { padding: var(--space-16) 0 var(--space-20); background: var(--color-warm-white); }
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+  }
+  .hero-layout { display: flex; flex-direction: column; gap: var(--space-5); }
+  .hero-layout .eyebrow { margin-bottom: 0; }
+  .hero-lead { max-width: 50ch; }
+  .hero-ctas { display: flex; gap: var(--space-5); flex-wrap: wrap; margin-top: var(--space-4); }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--color-sand-light);
+  }
+  .hero-stat { display: flex; flex-direction: column; gap: var(--space-2); }
+  .hero-stat-value {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-charcoal);
+    letter-spacing: -0.02em;
+  }
+  .hero-stat-label {
+    font-family: "DM Mono", monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-stone);
+  }
+  .hero-visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .hero-tag {
+    position: absolute;
+    top: 16px;
+    left: -8px;
+    z-index: 2;
+    box-shadow: var(--shadow-sm);
+  }
+  .hero-image {
+    aspect-ratio: 4/5;
+    min-height: 460px;
+    overflow: hidden;
+    position: relative;
+    background: var(--color-charcoal);
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-color-strip {
+    display: flex;
+    height: 14px;
+    width: 100%;
+  }
+  .hero-color-strip span { flex: 1; }
+  .hero-caption { text-align: right; }
+  @media (max-width: 980px) {
+    .hero .container { grid-template-columns: 1fr; }
+    .hero-image { aspect-ratio: 4/3; min-height: 320px; }
+  }
+  @media (max-width: 600px) {
+    .hero-stats { grid-template-columns: 1fr; gap: var(--space-4); }
+  }
+</style>
+
+<!-- ============================================================
+     LEISTUNGEN TEASER
+     ============================================================ -->
+<section class="bg-cream" data-screen-label="02 Leistungen">
+  <div class="container">
+    <header class="section-header reveal">
+      <div>
+        <div class="eyebrow"><span>02 — Was wir machen</span></div>
+        <h2 class="display-2">Sechs Disziplinen.<br/>Ein <em class="text-rust" style="font-style:italic">Meisterbetrieb.</em></h2>
+      </div>
+      <p class="body-large section-intro">
+        Vom Innenanstrich bis zum Gerüstbau — wir decken den kompletten Malerprozess
+        in einer Hand ab. Keine Subunternehmer, keine Schnittstellen.
+      </p>
+    </header>
+
+    <div class="grid grid-3" style="margin-top: var(--space-12)">
+      <article class="service-card reveal">
+        <div class="icon">🖌️</div>
+        <h3>Maler &amp; Anstrich</h3>
+        <p>Innen und außen — saubere Ausführung, langlebige Ergebnisse. Mit Originalfarben unserer Partner.</p>
+        <a href="leistungen.html#anstrich" class="btn btn-ghost" style="margin-top:auto;padding-top:var(--space-4)">Mehr erfahren <span class="arrow">→</span></a>
+      </article>
+      <article class="service-card reveal">
+        <div class="icon">🏗️</div>
+        <h3>Gerüstbau</h3>
+        <p>Eigenes Gerüst bis zu 2.000 m² — wir bauen alles selbst. Schnell verfügbar, sicher montiert.</p>
+        <a href="leistungen.html#geruest" class="btn btn-ghost" style="margin-top:auto;padding-top:var(--space-4)">Mehr erfahren <span class="arrow">→</span></a>
+      </article>
+      <article class="service-card reveal">
+        <div class="icon">🎨</div>
+        <h3>Dekorative Wandgestaltung</h3>
+        <p>Vom Kinderzimmer bis zum Salon — keine Grenzen für Ihre Ideen. Mit Beratung vor Ort.</p>
+        <a href="leistungen.html#dekor" class="btn btn-ghost" style="margin-top:auto;padding-top:var(--space-4)">Mehr erfahren <span class="arrow">→</span></a>
+      </article>
+      <article class="service-card reveal">
+        <div class="icon">🌡️</div>
+        <h3>Wärmedämmung</h3>
+        <p>Perfekt abgestimmte Dämmsysteme für Ihre Immobilie. Nachhaltig planen, langfristig sparen.</p>
+        <a href="leistungen.html#daemmung" class="btn btn-ghost" style="margin-top:auto;padding-top:var(--space-4)">Mehr erfahren <span class="arrow">→</span></a>
+      </article>
+      <article class="service-card reveal">
+        <div class="icon">🏚️</div>
+        <h3>Schimmel &amp; Wasserschäden</h3>
+        <p>Ursachen finden, dauerhaft beseitigen. Wir bringen Räume zurück in einen gesunden Zustand.</p>
+        <a href="leistungen.html#schimmel" class="btn btn-ghost" style="margin-top:auto;padding-top:var(--space-4)">Mehr erfahren <span class="arrow">→</span></a>
+      </article>
+      <article class="service-card reveal">
+        <div class="icon">🪵</div>
+        <h3>Bodenbeläge</h3>
+        <p>Kompetente Auswahl und professionelle Verlegung. Holz, Vinyl, Teppich — wir kennen Material.</p>
+        <a href="leistungen.html#boden" class="btn btn-ghost" style="margin-top:auto;padding-top:var(--space-4)">Mehr erfahren <span class="arrow">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-12);
+    align-items: end;
+  }
+  .section-intro { max-width: 44ch; }
+  @media (max-width: 860px) {
+    .section-header { grid-template-columns: 1fr; align-items: start; }
+  }
+</style>
+
+<!-- ============================================================
+     FASSADEN SPLIT
+     ============================================================ -->
+<section data-screen-label="03 Fassaden">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <div class="fassade-image-wrap">
+          <div class="fassade-image">
+            <img src="assets/aussenanstrich-detail.jpg" alt="Detailaufnahme einer frisch gestrichenen Fassade mit Fensterläden in Aichach" />
+          </div>
+          <div class="fassade-image-tag tag tag-dark">Außenarbeiten</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow"><span>03 — Außenanstrich</span></div>
+        <h2 class="display-2 mb-0">Die Visitenkarte<br/>Ihres Hauses.</h2>
+        <p class="body-large" style="margin-top: var(--space-6); max-width: 50ch">
+          Der Balkon, die Fenster, das Geländer, die ganze Fassade — wir setzen Ihre
+          Vorstellungen um. Umweltfreundliche Beschichtungen, Algenschutz, Wärmeschutz —
+          wir kennen die aktuellen Lösungen.
+        </p>
+        <ul class="check-list" style="margin-top: var(--space-6)">
+          <li><span class="check-mark">✓</span>Komplettpaket inkl. Gerüstbau</li>
+          <li><span class="check-mark">✓</span>Farbberatung vor Ort, kostenlos</li>
+          <li><span class="check-mark">✓</span>Originalprodukte unserer Partner</li>
+          <li><span class="check-mark">✓</span>10+ Jahre Haltbarkeit der Beschichtung</li>
+        </ul>
+        <div style="display:flex; flex-wrap:wrap; gap:var(--space-2); margin-top: var(--space-8)">
+          <span class="tag tag-sage">Umweltfreundlich</span>
+          <span class="tag tag-sage">Algenschutz</span>
+          <span class="tag tag-gold">Wärmedämmung</span>
+          <span class="tag tag-rust">Farbberatung</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .fassade-image-wrap { position: relative; }
+  .fassade-image {
+    aspect-ratio: 4/5;
+    min-height: 480px;
+    overflow: hidden;
+    background: var(--color-cream);
+  }
+  .fassade-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .fassade-image-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .check-list { display: flex; flex-direction: column; gap: var(--space-3); }
+  .check-list li {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    color: var(--color-ink);
+  }
+  .check-mark {
+    color: var(--color-accent-rust);
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+</style>
+
+<!-- ============================================================
+     KUNDENSTIMMEN
+     ============================================================ -->
+<section class="bg-cream" data-screen-label="04 Stimmen">
+  <div class="container">
+    <header class="section-header reveal" style="grid-template-columns: 1fr 1fr">
+      <div>
+        <div class="eyebrow"><span>04 — Kundenstimmen</span></div>
+        <h2 class="display-2">Sehen, was<br/>andere sagen.</h2>
+      </div>
+      <div style="text-align: right">
+        <div style="font-family: 'Playfair Display', serif; font-weight: 900; font-size: 3rem; color: var(--color-accent-rust); line-height: 1">5,0 ★</div>
+        <p class="caption" style="margin-top: var(--space-2)">Google · 13 Bewertungen</p>
+      </div>
+    </header>
+
+    <div class="grid grid-3" style="margin-top: var(--space-12)">
+      <article class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          „Sehr netter Kontakt, alles bestens."
+        </blockquote>
+        <footer>
+          <strong>Oliver Kruse</strong>
+          <span class="caption">Google Review</span>
+        </footer>
+      </article>
+
+      <article class="review-card reveal review-featured">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          „Maler Meisinger ist unser <em>Haus- und Hofmaler</em> und wir sind sehr zufrieden!
+          Wir sind mittlerweile die <em>3. Generation</em>, die von ihm malern lässt. Alles top!"
+        </blockquote>
+        <footer>
+          <strong>Sarah Schormair</strong>
+          <span class="caption">Google Review</span>
+        </footer>
+      </article>
+
+      <article class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          „Malermeister Meisinger überzeugt durch seine guten Empfehlungen und Ausführungen.
+          Mit hoher Einsatzbereitschaft werden Arbeiten optimal ausgeführt."
+        </blockquote>
+        <footer>
+          <strong>Thomas Förster</strong>
+          <span class="caption">Google Review</span>
+        </footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .review-card {
+    background: var(--color-warm-white);
+    padding: var(--space-8);
+    border-top: 3px solid var(--color-sand-light);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    height: 100%;
+  }
+  .review-card.review-featured {
+    background: var(--color-charcoal);
+    color: var(--color-cream);
+    border-top: 3px solid var(--color-accent-gold);
+  }
+  .review-card .stars {
+    color: var(--color-accent-gold);
+    letter-spacing: 0.15em;
+    font-size: 1.1rem;
+  }
+  .review-card blockquote {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: var(--color-ink);
+    flex-grow: 1;
+  }
+  .review-card.review-featured blockquote { color: var(--color-cream); }
+  .review-card em { color: var(--color-accent-rust); font-style: italic; }
+  .review-card.review-featured em { color: var(--color-accent-gold); }
+  .review-card footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-sand-light);
+  }
+  .review-card.review-featured footer { border-top-color: rgba(255,255,255,0.1); }
+  .review-card strong {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    color: var(--color-charcoal);
+    font-size: 0.95rem;
+  }
+  .review-card.review-featured strong { color: var(--color-warm-white); }
+</style>
+
+<!-- ============================================================
+     PARTNER
+     ============================================================ -->
+<section data-screen-label="05 Partner">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <div class="eyebrow"><span>05 — Partner</span></div>
+        <h2 class="display-2 mb-0">Nur mit starken Partnern<br/>können wir <em class="text-rust" style="font-style:italic">glänzen.</em></h2>
+        <p class="body-large" style="margin-top: var(--space-6); max-width: 50ch">
+          Wir verwenden ausschließlich Originalprodukte von Brillux, Sto, Caparol, Keim und
+          weiteren Partnern. Qualität, die Sie sehen und spüren.
+        </p>
+      </div>
+
+      <div class="reveal partner-grid">
+        <div class="partner-logo"><span>Brillux</span><em>Premium Farben</em></div>
+        <div class="partner-logo"><span>Sto</span><em>Fassadensysteme</em></div>
+        <div class="partner-logo"><span>Caparol</span><em>Innen &amp; Außen</em></div>
+        <div class="partner-logo"><span>Keim</span><em>Mineralfarben</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--color-sand-light);
+    border: 1px solid var(--color-sand-light);
+  }
+  .partner-logo {
+    background: var(--color-warm-white);
+    padding: var(--space-10) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    text-align: center;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+  .partner-logo:hover { background: var(--color-cream); }
+  .partner-logo span {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: var(--color-charcoal);
+    letter-spacing: -0.02em;
+  }
+  .partner-logo em {
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-stone);
+    font-style: normal;
+  }
+</style>
+
+<!-- ============================================================
+     CTA BANNER (DARK)
+     ============================================================ -->
+<section class="bg-charcoal cta-banner" data-screen-label="06 CTA">
+  <div class="gradient-rule" style="position:absolute; top:0; left:0; right:0"></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div>
+        <div class="eyebrow on-dark"><span>Bereit anzufangen?</span></div>
+        <h2 class="display-2" style="color: var(--color-warm-white)">
+          Frisch ans Werk — wir beraten Sie<br/><em class="text-gold" style="font-style:italic">kostenlos vor Ort.</em>
+        </h2>
+        <p class="body-large" style="color: var(--color-sand); max-width: 50ch; margin-top: var(--space-5)">
+          Ob Innenanstrich, neue Fassade oder ein einzelnes Zimmer — schreiben Sie uns
+          oder rufen Sie direkt an. Wir kommen vorbei, hören zu und machen Ihnen ein klares Angebot.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren <span class="arrow">→</span></a>
+        <a href="tel:+491721562128" class="cta-phone">
+          <span class="caption">Direkt anrufen</span>
+          <strong>+49 172 1562128</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-banner { position: relative; padding: var(--space-24) 0; }
+  .cta-inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+  .cta-actions { display: flex; flex-direction: column; gap: var(--space-6); align-items: flex-start; }
+  .cta-phone {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    color: var(--color-cream);
+    padding: var(--space-5) 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    width: 100%;
+  }
+  .cta-phone strong {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--color-warm-white);
+    transition: color var(--duration-normal) var(--ease-out);
+  }
+  .cta-phone:hover strong { color: var(--color-accent-gold); }
+  @media (max-width: 860px) {
+    .cta-inner { grid-template-columns: 1fr; }
+  }
+</style>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="font-size: 1.75rem">Meisinger<span class="dot" aria-hidden="true"></span></a>
+        <p>Malermeisterbetrieb · Aichach · Bayern. Inhabergeführt, regional, mit Leidenschaft für das Handwerk.</p>
+        <div style="display:flex; gap: var(--space-2); margin-top: var(--space-6)">
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Meisterbetrieb</span>
+          <span class="tag tag-dark" style="background:rgba(255,255,255,0.06); color:var(--color-sand); border:1px solid rgba(255,255,255,0.1)">Familienunternehmen</span>
+        </div>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="leistungen.html#anstrich">Maler &amp; Anstrich</a></li>
+          <li><a href="leistungen.html#geruest">Gerüstbau</a></li>
+          <li><a href="leistungen.html#dekor">Wandgestaltung</a></li>
+          <li><a href="leistungen.html#daemmung">Wärmedämmung</a></li>
+          <li><a href="leistungen.html#schimmel">Schimmelsanierung</a></li>
+          <li><a href="leistungen.html#boden">Bodenbeläge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Johannesstraße 19</li>
+          <li>86551 Aichach</li>
+          <li style="padding-top: var(--space-3)"><a href="tel:+491721562128">+49 172 1562128</a></li>
+          <li><a href="mailto:info@maler-meisinger.de">info@maler-meisinger.de</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year">2025</span> Malerbetrieb Joachim Meisinger</span>
+      <span style="display:flex; gap: var(--space-6)">
+        <a href="kontakt.html#impressum">Impressum</a>
+        <a href="kontakt.html#datenschutz">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
